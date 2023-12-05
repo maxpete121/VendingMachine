@@ -1,8 +1,8 @@
-import { router } from './router-config.js';
+import { itemController } from "./controllers/itemController.js"
 
 class App {
 
-  router = router
+  itemController = new itemController()
 
 }
 

@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <!-- NAVLINKS -->
-          <a href="#/about" class="nav-link">About</a>
+          
         </div>
       </div>
       <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
@@ -41,8 +41,64 @@
   <!-- SECTION -->
   <main>
 
-    <section id="router-view">
-      <!-- primary viewport -->
+    <section class="row d-flex">
+      <div class="d-flex">
+        <div class="bg-dark col-1 text-light ms-1 p-1">
+          <h4>Skittles</h4>
+          <img src="" alt="">
+          <span class="d-flex">
+            <h4>Price:</h4>
+            <h4 id="price">0</h4>
+          </span>
+          <button>Buy</button>
+        </div>
+        <div class="bg-dark col-1 text-light ms-1 p-1">
+          <h4>Sour Ropes</h4>
+          <img src="" alt="">
+          <span class="d-flex">
+            <h4>Price:</h4>
+            <h4 id="price">0</h4>
+          </span>
+          <button onclick="app.itemController.grabItem('Sour Ropes')">Buy</button>
+        </div>
+        <div class="bg-dark col-1 text-light ms-1 p-1">
+          <h4>Kit Kats</h4>
+          <img src="" alt="">
+          <span class="d-flex">
+            <h4>Price:</h4>
+            <h4 id="price">0</h4>
+          </span>
+          <button onclick="app.itemController.grabItem('Kit Kats')">Buy</button>
+        </div>
+        <div class="bg-dark col-1 text-light ms-1 p-1">
+          <h4>Hersheys</h4>
+          <img src="" alt="">
+          <span class="d-flex">
+            <h4>Price:</h4>
+            <h4 id="price">0</h4>
+          </span>
+          <button onclick="app.itemController.grabItem('Hersheys')">Buy</button>
+        </div>
+        <div class="bg-dark col-1 text-light ms-1 p-1">
+          <h4>Milkyway</h4>
+          <img src="" alt="">
+          <span class="d-flex">
+            <h4>Price:</h4>
+            <h4 id="price">0</h4>
+          </span>
+          <button onclick="app.itemController.grabItem('Milky Way')">Buy</button>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Cart</h2>
+        <div id="item-cart">
+          <!-- <div class="d-flex bg-dark col-2 text-light align-items-baseline">
+            <h4 class="me-4" id="item-name">Item</h4>
+            <h4 class="me-2">Price: <h4 id="price">0</h4></h4>
+            <i class="mdi mdi-food-drumstick ms-3 fs-3"></i>
+          </div> -->
+        </div>
+      </div>
     </section>
 
   </main>
