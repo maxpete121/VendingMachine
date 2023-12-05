@@ -41,7 +41,7 @@
   <!-- SECTION -->
   <main>
 
-    <section class="row d-flex">
+    <section class="row d-flex mb-3">
       <div class="d-flex">
         <div class="bg-dark col-1 text-light ms-1 p-1">
           <h4>Skittles</h4>
@@ -50,7 +50,7 @@
             <h4>Price:</h4>
             <h4 id="price">0</h4>
           </span>
-          <button>Buy</button>
+          <button onclick="app.itemController.grabItem('Skittles')">Add Item</button>
         </div>
         <div class="bg-dark col-1 text-light ms-1 p-1">
           <h4>Sour Ropes</h4>
@@ -59,16 +59,16 @@
             <h4>Price:</h4>
             <h4 id="price">0</h4>
           </span>
-          <button onclick="app.itemController.grabItem('Sour Ropes')">Buy</button>
+          <button onclick="app.itemController.grabItem('Sour Ropes')">Add Item</button>
         </div>
         <div class="bg-dark col-1 text-light ms-1 p-1">
-          <h4>Kit Kats</h4>
+          <h4>Kit Kat</h4>
           <img src="" alt="">
           <span class="d-flex">
             <h4>Price:</h4>
             <h4 id="price">0</h4>
           </span>
-          <button onclick="app.itemController.grabItem('Kit Kats')">Buy</button>
+          <button onclick="app.itemController.grabItem('Kit Kat')">Add Item</button>
         </div>
         <div class="bg-dark col-1 text-light ms-1 p-1">
           <h4>Hersheys</h4>
@@ -77,7 +77,7 @@
             <h4>Price:</h4>
             <h4 id="price">0</h4>
           </span>
-          <button onclick="app.itemController.grabItem('Hersheys')">Buy</button>
+          <button onclick="app.itemController.grabItem('Hersheys')">Add Item</button>
         </div>
         <div class="bg-dark col-1 text-light ms-1 p-1">
           <h4>Milkyway</h4>
@@ -86,11 +86,26 @@
             <h4>Price:</h4>
             <h4 id="price">0</h4>
           </span>
-          <button onclick="app.itemController.grabItem('Milky Way')">Buy</button>
+          <button onclick="app.itemController.grabItem('Milky Way')">Add Item</button>
         </div>
       </div>
-      <div class="row">
-        <h2>Cart</h2>
+      <div class="row mt-4 justify-content-evenly">
+        <div class="d-flex">
+          <span class="d-flex">
+            <h2>Cart</h2>
+            <i class="mdi mdi-cart fs-3 ms-3"></i>
+          </span>
+          <span class="d-flex ms-4">
+            <h2>Cash Available:</h2>
+            <h2 id="has-cash">0</h2>
+          </span>
+          <span class="d-flex ms-4">
+            <h2>Total Items:</h2>
+            <h2 id="item-total">0</h2>
+          </span>
+          <button onclick="app.itemController.addCash()">Add $1</button>
+          <button onclick="">Buy Items</button>
+        </div>
         <div id="item-cart">
           <!-- <div class="d-flex bg-dark col-2 text-light align-items-baseline">
             <h4 class="me-4" id="item-name">Item</h4>

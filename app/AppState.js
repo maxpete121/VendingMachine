@@ -16,9 +16,8 @@ class ObservableAppState extends EventEmitter {
     new item('Milky Way',1.50)
   ]
 
-  machineStatus = [
-    new machine(10,0)
-  ]
+  machine =  new machine(0,0)
+
 /**@type {item} */
   selectedItem = null
 
